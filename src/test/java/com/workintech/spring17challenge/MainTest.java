@@ -1,7 +1,6 @@
 package com.workintech.spring17challenge;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.workintech.spring17challenge.entity.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.workintech.spring17challenge.exceptions.ApiErrorResponse;
 import com.workintech.spring17challenge.exceptions.ApiException;
 import org.junit.jupiter.api.*;
@@ -57,7 +56,7 @@ class MainTest {
 
     @Test
     @DisplayName("application properties istenilenler eklendi mi?")
-    void serverPortIsSetTo8585() {
+    void serverPortIsSetTo9000() {
 
         String serverPort = env.getProperty("server.port");
         assertThat(serverPort).isEqualTo("9000");
